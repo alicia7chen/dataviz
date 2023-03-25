@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project 474</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1>April Showers Bring May Flowers &#127800;</h1>
+        <br>
+        <p class="intro">The phrase “April showers bring May flowers” is a popular saying used often during the month of April. 
+            This is typically the time when the last bit of snow turns to all rain as temperatures climb, and increased 
+            rain shower activity sparks the beginning of flowers and plants to really start blooming. <a href = https://blogs.missouristate.edu/international/2021/04/30/learn-english-proverbs-april-showers-bring-may-flowers/>(Source &#127800;)</a></p>
+        <br>
+        <p class="intro">With the spring season typically considered as late-March to late-June, let's examine if this saying holds true with percipitation data across 10 US cities!</p>
+        <br>
+            <h2>Select the City's Flower to View Rainfall Trends In the Spring Season</h2>
+            <div id="citySelect" name="flowers">
+                <button id="test" value="Pheonix" onclick="onCategoryChanged('Pheonix'); "><img src="./az.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Pheonix Catcus Flowers</p>
+                    </details>
+                    
+                </button>
+                <button value="Philadelphia" onclick="onCategoryChanged('Philadelphia')"><img src="./pa.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Philadelphia Morning Laurel</p>
+                    </details>
+                </button>
+                <button value="Chicago" onclick="onCategoryChanged('Chicago')"><img src="./il.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Chicago Violet</p>
+                    </details>
+                </button>
+                <button value="Jacksonville" onclick="onCategoryChanged('Jacksonville')"><img src="./fl.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Jacksonville Orange Blossoms</p>
+                    </details>
+                    </button>
+                <button value="Indianapolis" onclick="onCategoryChanged('Indianapolis')"><img src="./in.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Indianapolis Peony</p>
+                    </details></button>
+                <button value="Los Angeles" onclick="onCategoryChanged('Los Angeles')"><img src="./ca.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Los Angeles Poppy</p>
+                    </details></button>
+                <button value="Charlotte" onclick="onCategoryChanged('Charlotte')"><img src="./nc.jpeg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Charlotte Dogwood</p>
+                    </details></button>
+                <button value="Seattle" selected onclick="onCategoryChanged('Seattle')"><img src="./wa.jpeg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Seattle Rhododendron</p>
+                    </details></button>
+                <button value="Houston" onclick="onCategoryChanged('Houston')"><img src="./tx.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>Houston Bluebonnet</p>
+                    </details></button>
+                <button value="New York" onclick="onCategoryChanged('New York')"><img src="./ny.jpg">
+                    <details>  
+                        <summary> </summary>
+                        <p>New York Rose</p>
+                    </details></button>
+            </div>
+            <br>
+            <br>
+            <p class="key"><b>Legend</b>
+                <p class="actual">- actual precipitation</p>
+                <p class="average">- average precipitation</p>
+                <p class="record">- record precipitation</p>
+            </p>
+            
+            	    <!-- </button> -->
+         <div id="vis">
+            <!-- <button id="play-button">Play</button> -->
+            <svg width="1300" height="500" class = "temperature"></svg>
+        </div>
+          <p class="key">Image References: </p>
+          <p>
+            By I, Jörg Hempel, CC BY-SA 2.0 de, https://commons.wikimedia.org/w/index.php?curid=3882183
+            <br>
+            By Ellen Levy Finch (Elf) - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=39146    
+        <br>
+        By User:Darwinek - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=205124
+        <br>
+        By Photo by and (c)2007 Derek Ramsey (Ram-Man) - Self-photographed, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=2053011
+        <br>
+        By Randy Smith - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=892343
+        <br>
+        By Dave Whitinger - All Things Plants, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2318999
+    <br>
+        By Kurt Stüber [1] - caliban.mpiz-koeln.mpg.de/mavica/index.html part of www.biolib.de, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4223
+       <br>
+        By Artslave - Flickr, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=2061708  
+        <br>
+          </p>
+
+</body>
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="./final.js"></script>
+</html>

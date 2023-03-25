@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+}
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+}
+.actual {
+  color:darkblue;
+}
+.average {
+  color:skyblue;
+}
+.record {
+  color:blue;
+}
+h1{
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  font-size: 100px;
+  }
+  h2 {
+    font-size: 70px;
+    font-family: 'DM Serif Display', serif;
+  }
+
+.intro {
+  /* font-style: italic; */
+  font-size: 30px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #FFF6F1;
+}
+.actualLine {
+  fill:none;
+}
+.averageLine {
+  fill:none;
+}
+.key {
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+}
